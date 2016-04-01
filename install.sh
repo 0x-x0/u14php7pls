@@ -52,6 +52,10 @@ curl -s http://getcomposer.org/installer | php
 chmod +x composer.phar
 mv composer.phar usr/bin/composer
 
+echo "============ Installing phpunit ============"
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
 
 echo "================= Install Extensions ==================="
 sudo apt-get install php-memcache
